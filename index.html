@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kegiatan Kami</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .calendar-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Membuat iframe kalender menjadi responsif */
+        .calendar-container iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Agenda & Kalender Kegiatan</h1>
+
+    <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=a7b55cfe9a4a24b5a14fcc874559ac49bf8a5e8341a7831243124e5fb89036ba%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+</body>
+</html>
