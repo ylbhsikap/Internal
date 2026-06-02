@@ -27,14 +27,20 @@
         }
 
         /* KALENDER: Trik CSS agar responsif di HP & Laptop */
-        .kalendar-box {
-            position: relative;
-            padding-bottom: 75%; /* Rasio standar di laptop */
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+       .kalendar-box {
+    position: relative;
+    padding-bottom: 70%; /* Rasio proporsional, tidak terlalu tinggi */
+    height: 0;
+    overflow: hidden;
+    
+    /* Sentuhan Elegan Modern */
+    background-color: #ffffff;
+    border-radius: 16px; /* Sudut melengkung yang halus dan modern */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Bayangan super lembut, anti-kaku */
+    border: 1px solid rgba(0, 0, 0, 0.03); /* Garis tepi tipis transparan */
+    
+    transition: all 0.3s ease; /* Efek halus saat transisi */
+}
         .kalendar-box iframe {
             position: absolute;
             top: 0;
