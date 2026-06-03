@@ -27,6 +27,7 @@
             margin: 0 auto;
             text-align: center;
         }
+       
         /* KALENDER: Trik CSS agar responsif di HP & Laptop */
        .kalendar-box {
     position: relative;
@@ -61,6 +62,20 @@
             }
             .kalendar-box {
                 padding-bottom: 120%; /* Membuat kalender lebih memanjang ke bawah di HP agar teksnya tidak terpotong */
+            }
+        }
+        /* DESKTOP FULL WIDTH FIX */
+        @media screen and (min-width: 1024px) {
+            .wrapper {
+                max-width: none;
+                width: 100%;
+                padding: 0 60px;
+                box-sizing: border-box;
+            }
+
+            .kalendar-box {
+                padding-bottom: 0;   /* matikan rasio */
+                height: 600px;       /* tinggi tetap */
             }
         }
     </style>
